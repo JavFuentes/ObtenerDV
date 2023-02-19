@@ -1,15 +1,9 @@
 public class ObtenerDV {
 	
-	static String digitoVerificador = "";
-	static String rut = "";
-	public static void main(String[] args) {
-		rut = "16742032";
-		digitoVerificador = obtenerDV(rut);
-		System.out.println(rut + "-" + digitoVerificador);
-	}
-	
-	//Función que retorna el digito verificador de un rut
-	public static String obtenerDV(String rut) {			
+	/**
+	 * Función que recibe un RUT como String y retorna el digito verificador de dicho RUT:
+	 */	
+	public String obtenerDV(String rut) {			
 		 int suma = 0;
 		 int factor = 2;
 		 
